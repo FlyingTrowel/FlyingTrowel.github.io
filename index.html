@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <div class="body" id="body">
+        <body onload="theme()" id="body" >
+            <header>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="index.html">Home</a></li><li>
+                            <a href="aboutMe.html">About Me</a></li><li>
+                                <a href="hobbies.html">Hobbies</a></li><li>
+                    </ul>
+                </nav>
+                
+                <div>
+                    <ul class="theme_button">
+                        <li>
+                            <label class="label_expanded">
+                                <input type="radio" name="darkmode" id="dark">
+                                    <div class="radio_btns">
+                                        <img src="res/dark.png" height="40px">
+                                    </div>
+                            </label>
+                        </li><li>
+                            <label class="label_expanded">
+                                <input type="radio" name="darkmode" id="light">
+                                    <div class="radio_btns">
+                                        <img src="res/light.png" height="40px">
+                                    </div>
+                            </label>
+                        </li> 
+                    </ul>
+                </div>
+                
+            </header>
+            <br><br>
+
+            <div class="splash">
+                <h2 id="welcome" data-text="Welcome...">Welcome...</h2>
+            </div>
+            
+
+            <div class="wrapper">
+                <input type="checkbox" id="check" checked onchange="home()">
+                <label for="check">Click Me!</label>
+            </div>
+  
+        </body>
+    </div>
+    
+</html>

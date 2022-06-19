@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+        <script src="script_hobby.js"></script>
+    </head>
+
+    <body onload="theme()" id="body">
+        <header>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li><li>
+                        <a href="aboutMe.html">About Me</a></li><li>
+                            <a href="hobbies.html">Hobbies</a></li><li>
+                </ul>
+            </nav>
+            
+            <div>
+                <ul class="theme_button">
+                    <li>
+                        <label class="label_expanded">
+                            <input type="radio" name="darkmode" id="dark">
+                                <div class="radio_btns">
+                                    <img src="res/dark.png" height="40px">
+                                </div>
+                        </label>
+                    </li><li>
+                        <label class="label_expanded">
+                            <input type="radio" name="darkmode" id="light">
+                                <div class="radio_btns">
+                                    <img src="res/light.png" height="40px">
+                                </div>
+                        </label>
+                    </li> 
+                </ul>
+            </div>
+            
+        </header>
+        <br>
+        <center>
+            <table border = "1">
+                <tr>
+                    <td>Interests</td>
+                    <td>
+                        Playing video games<br> 
+                        Listening to music<br>
+                        Watching anime 
+                    </td> 
+                </tr> 
+            </table>
+            </center>
+            
+            <br>
+
+            
+                <div class="textfortextbox">
+                    Which one do you wish to learn more?
+                </div>
+            
+            
+                <div class="textbox">
+                    <input type="text" id="searchf">
+                </div>
+                <div class="search">
+                    <button onclick="search(document.getElementById('searchf').value)">Search</button>
+                </div>
+
+                <br>
+
+                <center><h1>Games</h1></center>
+                <br>
+
+                <center>
+                    <form>
+                        <div class="select_game">
+                            <select name="games" id="games" onchange="display(this)">
+                                <option selected disabled>Choose a game</option>
+                                <option value="nier">NieR:Automata</option>
+                                <option value="fgo">Fate/Grand Order</option>
+                                <option value="balo">Valorant</option>
+                            </select>
+                        </div>
+                    </form>
+                </center>
+                
+                <br>
+
+                <div class="asset">
+                    <div class="img" id="img">
+
+                    </div>
+                    <div class="vid" id="vid">
+
+                    </div>
+                </div>
+                   
+        
+    </body>
+</html>
